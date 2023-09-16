@@ -6,7 +6,7 @@
 #    By: mrezaei <mrezaei@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/11 10:46:04 by mrezaei           #+#    #+#              #
-#    Updated: 2023/09/16 16:53:09 by mrezaei          ###   ########.fr        #
+#    Updated: 2023/09/16 17:11:45 by mrezaei          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,10 @@ CFLAGS 		=	-Wall -Wextra -Werror
 OPTION 		=	-std=c++98
 NAME 		=	Zombie
 INCLUDES	=	./include
-SRC			=	$(shell find ./src -name "*.cpp" -type f)
+SRC			=	$(shell find ./src -name "Zombie.cpp" \
+				-o -name "main.cpp" \
+				-o -name "NewZombie.cpp" \
+				-o -name "RandomChump.cpp" -type f)
 
 OBJECTS		=	$(SRC:.cpp=.o)
 
