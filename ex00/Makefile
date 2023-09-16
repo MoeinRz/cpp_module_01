@@ -6,14 +6,14 @@
 #    By: mrezaei <mrezaei@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/11 10:46:04 by mrezaei           #+#    #+#              #
-#    Updated: 2023/09/14 18:37:09 by mrezaei          ###   ########.fr        #
+#    Updated: 2023/09/16 16:53:09 by mrezaei          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC 			=	c++
 CFLAGS 		=	-Wall -Wextra -Werror 
 OPTION 		=	-std=c++98
-NAME 		=	ex00
+NAME 		=	Zombie
 INCLUDES	=	./include
 SRC			=	$(shell find ./src -name "*.cpp" -type f)
 
