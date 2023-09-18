@@ -6,7 +6,7 @@
 #    By: mrezaei <mrezaei@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/11 10:46:04 by mrezaei           #+#    #+#              #
-#    Updated: 2023/09/16 17:11:45 by mrezaei          ###   ########.fr        #
+#    Updated: 2023/09/18 14:06:32 by mrezaei          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,8 @@ NAME 		=	Zombie
 INCLUDES	=	./include
 SRC			=	$(shell find ./src -name "Zombie.cpp" \
 				-o -name "main.cpp" \
-				-o -name "NewZombie.cpp" \
-				-o -name "RandomChump.cpp" -type f)
+				-o -name "newZombie.cpp" \
+				-o -name "randomChump.cpp" -type f)
 
 OBJECTS		=	$(SRC:.cpp=.o)
 
