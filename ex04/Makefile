@@ -1,7 +1,7 @@
 CC 			=	c++
 CFLAGS 		=	-Wall -Wextra -Werror 
 OPTION 		=	-std=c++98
-NAME 		=	Zombie_04
+NAME 		=	replace
 INCLUDES	=	./include
 SRC			=	$(shell find ./src -name "main.cpp" -o -name "HumanA.cpp" \
 				-o -name "HumanB.cpp" -o -name "Weapon.cpp" -type f)
