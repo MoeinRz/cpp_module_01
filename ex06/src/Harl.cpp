@@ -12,22 +12,22 @@ Harl::~Harl(void)
 
 void Harl::debug(void)
 {
-    std::cout << "This is debug message." << std::endl;
+    std::cout << "[DEBUG]\nThis is debug message." << std::endl;
 }
 
 void Harl::info(void)
 {
-    std::cout << "This is info message." << std::endl;
+    std::cout << "[INFO]\nThis is info message." << std::endl;
 }
 
 void Harl::warning(void)
 {
-    std::cout << "This is warning message." << std::endl;
+    std::cout << "[WARNING]\nThis is warning message." << std::endl;
 }
 
 void Harl::error(void)
 {
-    std::cout << "This is error message." << std::endl;
+    std::cout << "[ERROR]\nThis is error message." << std::endl;
 }
 
 void Harl::complain(std::string level)
@@ -49,25 +49,24 @@ void Harl::complain(std::string level)
     {
         case 0:
             Harl::debug();
-            break;
-        case 1:
-            Harl::debug();
-            Harl::info();
-            break;
-        case 2:
-            Harl::debug();
-            Harl::info();
-            Harl::warning();
-            break;
-        case 3:
-            Harl::debug();
             Harl::info();
             Harl::warning();
             Harl::error();
             break;
+        case 1:
+            Harl::info();
+            Harl::warning();
+            Harl::error();
+            break;
+        case 2:
+            Harl::warning();
+            Harl::error();
+            break;
+        case 3:
+            Harl::error();
+            break;
         default:
-            std::cout << "Wrong input." << std::endl;
-            std::cout << "Please input DEBUG, INFO, WARNING, or ERROR." << std::endl;
+            std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
             break;
     }
 }
